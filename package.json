@@ -8,7 +8,7 @@
     "gatsby": "^2.17.11",
     "gatsby-image": "^2.2.31",
     "gatsby-plugin-manifest": "^2.2.27",
-    "gatsby-plugin-offline": "^3.0.19",
+    "gatsby-plugin-offline": "^3.0.21",
     "gatsby-plugin-react-helmet": "^3.1.14",
     "gatsby-plugin-sharp": "^2.2.37",
     "gatsby-source-filesystem": "^2.1.36",
@@ -28,6 +28,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
